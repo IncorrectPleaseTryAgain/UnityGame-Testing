@@ -2,8 +2,7 @@ using UnityEngine;
 
 public enum LogType
 {
-    None,
-    Log,
+    Info,
     Warning,
     Error,
     Todo
@@ -14,12 +13,12 @@ public class LogSystem : Singleton<LogSystem>
 {
     [SerializeField] bool _logEnabled = true;
 
-    public void Log(string message, LogType type = LogType.Log, string _logTag = "N/A")
+    public void Log(string message, LogType type = LogType.Info, string _logTag = "N/A")
     {
         if (!_logEnabled) return;
         switch (type)
         {
-            case LogType.Log:
+            case LogType.Info:
                 Debug.Log($"<color=#{ColorUtility.ToHtmlStringRGB(Color.black)}>[{_logTag}]</color> {message}");
                 break;
             case LogType.Warning:

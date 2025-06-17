@@ -74,7 +74,7 @@ public class ButtonLogic : MonoBehaviour
 
     public void ExecuteAction()
     {
-        LogSystem.Instance.Log($"Executing action: {action}", LogType.Log, _logTag);
+        LogSystem.Instance.Log($"Executing action: {action}", LogType.Info, _logTag);
         switch (action)
         {
             case Action.LoadScene:
