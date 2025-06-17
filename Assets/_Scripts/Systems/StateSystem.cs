@@ -1,7 +1,7 @@
 using UnityEngine;
 using System;
 
-public class StateManager : Singleton<StateManager>
+public class StateSystem : PersistentSingleton<StateSystem>
 {
     public static event Action<GameStates> OnBeforeStateChanged;
     public static event Action<GameStates> OnAfterStateChanged;
@@ -10,7 +10,6 @@ public class StateManager : Singleton<StateManager>
     public enum GameStates
     {
         Initialize,
-        CreateNewSave,
     }
 
     private void Start() => ChangeGameState(GameStates.Initialize);

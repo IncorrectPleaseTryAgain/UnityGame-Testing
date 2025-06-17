@@ -431,7 +431,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1654656943533686760}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2508408750604258915}
+        m_TargetAssemblyTypeName: UI_SaveCardLogic, Assembly-CSharp
+        m_MethodName: OnButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2508408750604258915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -444,6 +456,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 793128f2bedce604888813228b2b94f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cardType: 0
+  saveName: 
+  saveID: 0
+  saveData: 
+  saveIcon: {fileID: 0}
+  _saveName: {fileID: 6293531230381570553}
+  _saveData: {fileID: 7446293189219782362}
+  _saveIcon: {fileID: 6398297280274831020}
+  _deleteButton: {fileID: 5887466925249240136}
 --- !u!1 &4108622095077812508
 GameObject:
   m_ObjectHideFlags: 0
@@ -1084,6 +1105,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d41270aecb74f8429fb70d0edc81f55, type: 3}
+--- !u!114 &5887466925249240136 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5016496114946626818, guid: 0d41270aecb74f8429fb70d0edc81f55, type: 3}
+  m_PrefabInstance: {fileID: 1453069877711653194}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &8869115982016359481 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8016190339352225139, guid: 0d41270aecb74f8429fb70d0edc81f55, type: 3}
